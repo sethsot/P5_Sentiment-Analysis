@@ -22,6 +22,9 @@
 This project explores unstructured data (tweets) sentiment Analysis. In this project we fine-tune pre-trained models from HuggingFace on a new dataset to adapt the models in answering if a tweet has a neutral, positive, or negative sentiment. We then use the models to develop a Gradio app and deploy this app on the HuggingFace platform. 
 
 ## Objectives of Project <a name="objectives-of-project"></a>
+The objective of this project is to develop a machine learning model to assess if a twitter post related to vaccinations is positive, neutral, or negative. This solution could help governments and other public health actors monitor public sentiment towards COVID-19 vaccinations and help improve public health policy, vaccine communication strategies, and vaccination programs accross the world. 
+
+To achieve this objective, the following were undertaken;
 1. Fine-tune a two pretrain Hugging Face model.
 2. Create a Gradio app based on trained model
 3. Upload the Hugging Face model and Deploy Gradio app on the HuggingFace platform
@@ -32,7 +35,14 @@ The datasets where extracted from github, test and train datasets.
 
 * The dataset is made up of short tweets on the Covid vaccine.  
 * There were 5 columns (tweet_id, safe_text, label, agreement, and text_length.
-* There were 10,000 rows in the train dataset. 
+* There were 10,000 rows in the train dataset.
+
+### Variable definition:
+* tweet_id: Unique identifier of the tweet
+* safe_tweet: Text contained in the tweet. Some sensitive information has been removed like usernames and urls
+* label: Sentiment of the tweet (-1 for negative, 0 for neutral, 1 for positive)
+* agreement: The tweets were labeled by three people. Agreement indicates the percentage of the three reviewers that agreed on the given label. 
+
 
 ## Installation: <a name="installation:"></a>
 * transformers==4.35.0
