@@ -16,7 +16,7 @@
 ## Summary <a name="summary"></a>
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------:|------:|
-| P5 | Natural Language Processing Project: Sentiment Analysis |  |  |
+| P5 | Natural Language Processing Project: Sentiment Analysis | https://medium.com/@oparetwumseth/sentiment-analysis-and-gradio-app-on-covid-vaccination-e9b3f495e400 | https://huggingface.co/sotseth/tweets_classifier/blob/main/app.py |
 
 ## Project Description <a name="project-description"></a>
 This project explores unstructured data (tweets) sentiment Analysis. In this project we fine-tune pre-trained models from HuggingFace on a new dataset to adapt the models in answering if a tweet has a neutral, positive, or negative sentiment. We then use the models to develop a Gradio app and deploy this app on the HuggingFace platform. 
